@@ -37,3 +37,9 @@ function Logout(){
   localStorage.removeItem("roon_name");
   window.location = "index.html"
 }
+
+ function redirectToRoomName(name){
+  console.log(name);
+  localStorage.setItem("room_name",name);
+  window.location="chat_page.html"
+ }
